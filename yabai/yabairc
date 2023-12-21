@@ -31,6 +31,8 @@ yabai -m rule --add app="^com.sweetwater.PhoneBook$" manage=off
 yabai -m rule --add app="8x8 Work$" manage=off mouse_follows_focus=off layer=below
 yabai -m rule --add app='^8x8 Work Helper$' manage=off layer=below
 yabai -m rule --add app='^4D$' manage=off
+yabai -m rule --add app='^NotePad$' manage=off
+yabai -m rule --add app='^Officelink$' manage=off
 
 # float settings windows
 yabai -m rule --add title='Settings$' manage=off
