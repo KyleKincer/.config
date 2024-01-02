@@ -57,5 +57,11 @@ meh - o : yabai -m window --space 8
 meh - p : yabai -m window --space 9
 meh - 0x21 : yabai -m window --space 10
 
+# toggle window tiling
+meh - t : yabai -m window --toggle float
+
+# toggle focused window fullscreen
+meh - f : yabai -m window --toggle zoom-fullscreen
+
 # open warp terminal
 hyper - return : open -a /Applications/warp.app
