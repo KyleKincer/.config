@@ -34,6 +34,7 @@ yabai -m rule --add app='^4D$' manage=off
 yabai -m rule --add app='^NotePad$' manage=off
 yabai -m rule --add app='^Officelink$' manage=off
 yabai -m rule --add app='^Calculator$' manage=off
+yabai -m rule --add app='^Finder$' manage=off
 
 # float settings windows
 yabai -m rule --add title='Settings$' manage=off
