@@ -8,6 +8,8 @@ local projects = require("projects")
 config.color_scheme = "Solarized (dark) (terminal.sexy)"
 config.font = wezterm.font("JetBrains Mono")
 config.font_size = 13.0
+config.window_decorations = "RESIZE|INTEGRATED_BUTTONS"
+config.window_background_opacity = 0.8
 
 config.leader = { key = "a", mods = "CTRL", timeout_milliseconds = 1000 }
 config.keys = {
