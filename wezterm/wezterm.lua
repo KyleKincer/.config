@@ -42,6 +42,11 @@ config.colors = {
 config.leader = { key = "a", mods = "CTRL", timeout_milliseconds = 1000 }
 config.keys = {
 	{
+		key = "o",
+		mods = "LEADER",
+		action = wezterm.action.ShowLauncher,
+	},
+	{
 		key = "p",
 		mods = "LEADER",
 		-- Present in to our project picker
