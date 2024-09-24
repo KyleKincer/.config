@@ -6,7 +6,7 @@ local projects = require("projects")
 
 -- (This is where our config will go)
 config.color_scheme = "Solarized (dark) (terminal.sexy)"
-config.font = wezterm.font("JetBrains Mono")
+config.font = wezterm.font("Roboto Mono")
 config.font_size = 13.0
 config.window_decorations = "RESIZE"
 config.window_background_opacity = 0.8
