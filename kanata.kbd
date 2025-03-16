@@ -1,0 +1,42 @@
+(defcfg
+  linux-continue-if-no-devs-found true
+  
+  process-unmapped-keys yes
+)
+
+;; Define the keyboard source layout
+(defsrc
+  esc  f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12  ins  del
+  grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
+  tab  q    w    e    r    t    y    u    i    o    p    [    ]    \
+  caps a    s    d    f    g    h    j    k    l    ;    '    ret
+  lsft z    x    c    v    b    n    m    ,    .    /    rsft
+  lctl lmet lalt           spc            ralt rmet cmp  rctl
+)
+
+;; Define default aliases
+(defalias
+  ;; Caps as tap for Esc, hold for layer toggle
+  caps (tap-hold 200 200 esc (layer-toggle arrows))
+)
+
+;; Default layer
+(deflayer default
+  esc  f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12  ins  del
+  grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
+  tab  q    w    e    r    t    y    u    i    o    p    [    ]    \
+  @caps a    s    d    f    g    h    j    k    l    ;    '    ret
+  lsft z    x    c    v    b    n    m    ,    .    /    rsft
+  lctl lmet lalt           spc            ralt rmet cmp  rctl
+)
+
+;; WASD arrow layer (activated when Caps Lock is held)
+(deflayer arrows
+  esc  f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12  ins  del
+  grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
+  tab  q    up   e    r    t    y    u    i    o    p    [    ]    \
+  _    left down right f    g    h    j    k    l    ;    '    ret
+  lsft z    x    c    v    b    n    m    ,    .    /    rsft
+  lctl lmet lalt           spc            ralt rmet cmp  rctl
+)
+
