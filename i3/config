@@ -26,6 +26,15 @@ exec --no-startup-id feh --bg-fill Pictures/turkeyrun.jpeg
 exec --no-startup-id xset r rate 200 35
 exec --no-startup-id kanata -c ~/.config/kanata.kbd
 
+# Screenshot: Capture selected area to clipboard (macOS: Cmd+Ctrl+Shift+4)
+bindsym Mod4+Control+Shift+4 exec --no-startup-id flameshot gui -c
+
+# Screenshot: Capture entire screen to clipboard (macOS: Cmd+Ctrl+Shift+3)
+bindsym Mod4+Control+Shift+3 exec --no-startup-id maim | xclip -selection clipboard -t image/png
+
+# Screenshot: Capture active window to clipboard (macOS: Cmd+Ctrl+Shift+4, Space)
+bindsym Mod4+Control+Shift+2 exec --no-startup-id sh -c "maim -i $(xdotool getactivewindow) | xclip -selection clipboard -t image/png"
+
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
 
