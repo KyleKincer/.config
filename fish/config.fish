@@ -24,3 +24,8 @@ set -gx PATH $HOME/.cargo/bin $PATH
 # bun
 set --export BUN_INSTALL "$HOME/.bun"
 set --export PATH $BUN_INSTALL/bin $PATH
+
+# Alias for lazygit
+function lg
+    lazygit $argv
+end
