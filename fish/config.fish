@@ -11,6 +11,9 @@ set -gx GOPATH $HOME/go
 set -gx GOBIN $GOPATH/bin
 set -gx PATH $PATH $GOBIN
 
+# GCP project for Gemini CLI
+set -gx GOOGLE_CLOUD_PROJECT prod-sweetwater-web-947ceea6
+
 if status is-interactive
     # Commands to run in interactive sessions can go here
     if command -v fastfetch >/dev/null
