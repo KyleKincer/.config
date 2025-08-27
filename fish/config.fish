@@ -32,3 +32,8 @@ set --export PATH $BUN_INSTALL/bin $PATH
 function lg
     lazygit $argv
 end
+
+# Alias for tool4d
+function tool4d
+    /Applications/tool4d.app/Contents/MacOS/tool4d $argv
+end
